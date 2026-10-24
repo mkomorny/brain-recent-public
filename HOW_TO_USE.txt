@@ -1,0 +1,34 @@
+HOW TO USE: brain-recent
+=========================
+
+PURPOSE
+  Display your most recently created or updated Second Brain memories in
+  reverse-chronological order.
+
+CAPABILITIES
+  - Instant chronological list of recent memories
+  - Configurable result limit (default 5, up to 20)
+  - Displays ID, title, date-stamp, tags, and summary for each entry
+
+USE CASES
+  - "What did I store in my Second Brain yesterday?"
+  - Quick sanity check after saving a note or decision
+  - Checking the ID of a recently added memory to append or link to it
+
+IDEAS
+  - Run `/brain-recent 10` on Monday to review what was logged over the past week
+
+PROMPTS YOU CAN PASTE
+  /brain-recent
+
+  /brain-recent 10
+
+  /brain-recent 20
+
+EXAMPLE FLOW
+  You: /brain-recent 5
+  Agent: [Calls second-brain MCP list_recent tool, displays 5 newest memories with IDs and dates]
+
+DEFAULT GOALS IF YOU DON'T NAME ONE
+  1. Retrieve recent memories (default limit 5)
+  2. Display them in clean reverse-chronological order with IDs and summaries
